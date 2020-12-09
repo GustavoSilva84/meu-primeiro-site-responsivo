@@ -1,0 +1,26 @@
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color_menu: white;
+    --color_rocha: rgb(119, 0, 255);
+}
+
+.pontos {
+    display: flex;
+    margin: 10px;
+}
+
+.pontos li {
+    font-size: 9px;
+}
