@@ -1,53 +1,60 @@
 /*  cabeçalho */
 
-#cabecalho { /* logo */
+/* logo */
+
+#cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(34, 34, 34);
-    padding: 10px;
+    padding: 20px;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    font-style: Yellowtail, serif;
-    font-size: 1.60em;
+    font-family: cursive;
+    font-size: 2em;
     color: var(--color_menu);
-    padding: 0px;
     margin-bottom: 20px;
 }
 
 #logo span {
     color: var(--color_rocha);
-}   /*  fim da logo  */
+}
+
+/* fim logo */
 
 
-#menu {   /* menu */ 
+
+/* menu */
+
+#menu { 
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding: 0px;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 #menu li a {
     display: flex;
     justify-content: center;
     color: var(--color_menu);
-    font-size: 0.90em;
+    font-size: 0.80em;
     transition: 100ms;
     margin-bottom: 8px;
 } 
 
 #menu li a:hover {
     color: var(--color_rocha);
-    font-size: 1em;
-}   /* fim menu */
+    font-size: 1.20em;
+}   
+
+/* fim menu */
 
 
 
 /* topo */
+
 #topo {
     background: url('../imagens/camera.jpg') no-repeat;
     background-size: cover;
@@ -57,8 +64,7 @@
     align-items: center;
     text-align: center;
     color: rgb(179, 179, 179);
-    font-size: 1em;
-    padding: 30px 0 40px 0;
+    padding: 30px;
 }
 
 #topo h1 {
@@ -68,30 +74,27 @@
     font-weight: 200;
 }
 
-#topo hr {
-    width: 40px;
-    border: 0.50px dashed white;
-    margin: 30px 0 30px 0;
-    
-}
-
 #topo p {
-    width: 300px;
+    width: 600px;
     margin: 0;
 }
 
 #topo p span a {
-    color: rgb(195, 208, 214);
+    color: var(--color_rocha);
     text-decoration: underline;
-}   /* fim topo */
+}
 
+/* fim topo */
+
+
+
+/*  sobre */
 
 #sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1em;
-    padding: 30px 0 40px 0;
+    padding: 30px;
     text-align: center;
     background-color:  rgb(34, 34, 34);
     color: rgb(195, 208, 214);
@@ -103,7 +106,6 @@
     margin: 0;
     padding: 0;
     font-weight: 200;
-    
 }
 
 #sobre .pontos {
@@ -111,38 +113,45 @@
 }
 
 #sobre p {
-    width: 300px;
-    margin: 0px;
+    width: 600px;
+    margin: 0;
     padding: 0;
 }
 
 #sobre a {
-    width: 600px;
     margin-top: 30px;
     padding: 10px 30px;
     color: rgb(34, 34, 34);
     background-color: rgb(206, 206, 206);
     width: fit-content;
+    transition: 300ms;
 }
 
+#sobre a:hover {
+    font-size: 1.20em;
+}
+
+/* fim sobre */
 
 
+
+/* serviço */
 
 #servico {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 40px 0;
 }
 
 #servico h1 {
+    font-family: cursive;
     margin: 0;
-    padding: 0px;
 }
 
 #servico div {
-    
-
+    margin-top: 60px;
+    display: flex;
 }
 
 #servico div .fundo_conteudo_servico {
@@ -150,12 +159,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
-    width: 260px;
+    width: 200px;
     background: rgb(228, 228, 228);
-    padding: 30px 50px 30px 50px;
+    padding: 10px;
     transition: 200ms;
-    margin: 10px 0 0 0;
+    width: 250px;
+    margin: 0 10px 0 10px;
 }
 
 #servico div .fundo_conteudo_servico:hover {
@@ -164,36 +173,68 @@
     box-shadow: 10px 10px 30px black;
 }
 
+#servico div .fundo_conteudo_servico h3 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#servico div .fundo_conteudo_servico:hover h3 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+#servico div .fundo_conteudo_servico p {
+    margin-top: 30px;
+}
+
+/* fim serviço */
 
 
+
+/* fotos */
 
 #fotos {
     background: rgb(14, 14, 14);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1em;
-    padding: 30px 10px 30px 10px;
-    color:  rgb(157, 157, 157);;
+    padding: 30px 10px;
 }
 
 #fotos h1 {
+    font-family: cursive;
     margin: 0;
+    padding: 0;
     font-size: 2em;
-    color:  rgb(157, 157, 157);;
+    color: rgb(157, 157, 157);
 }
 
 #fotos .pontos {
-    margin: 10px 0 15px 8px;
+    color: rgb(157, 157, 157);
+}
+
+#fundo_galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #fotos img {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 45%;
+    margin: 8px;
 }
 
 
 
+/* fotos fim */
+
+
+
+
+/* contato */
 
 #contato {
     display: flex;
@@ -202,31 +243,173 @@
     text-align: center;
 }
 
+.fundo_conteudo_contato {
+    width: 300px;
+    background: rgb(228, 228, 228);
+    margin: 30px;
+    padding: 70px 90px 70px 90px;
+    width: fit-content;
+
+}
+
+.fundo_conteudo_contato p {
+    margin: 70px 0 0 0;
+
+}
+
+/* fim do contato */
 
 
 
+@media (max-width: 1160px) {
+
+    #servico div {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #servico div .fundo_conteudo_servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        width: 270px;
+        background: rgb(228, 228, 228);
+        padding: 30px;
+        transition: 200ms;
+    }
+
+    #servico div .fundo_conteudo_servico:hover {
+        background: rgb(14, 14, 14);
+        color: rgb(157, 157, 157);
+        box-shadow: 10px 10px 30px black;
+    }
+
+    #servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 
+@media (max-width: 853px) {
+
+    #fotos {
+        background: rgb(14, 14, 14);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         padding: 30px 0px 30px 0px;
+    }
+
+    #fotos h1 {
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        color: rgb(157, 157, 157);
+    }
+
+    #fotos .pontos {
+        color: rgb(157, 157, 157);
+    }
+
+    #fundo_galeria {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #fotos img {
+        width: 90%;
+        margin: 8px;
+    }
 
 
+    #servico div {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
+    #servico div .fundo_conteudo_servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
+        margin-bottom: 30px;
+        width: 270px;
+        background: rgb(228, 228, 228);
+        padding: 30px;
+        transition: 200ms;
+        
+    }
 
+    #servico div .fundo_conteudo_servico:hover {
+        background: rgb(14, 14, 14);
+        color: rgb(157, 157, 157);
+        box-shadow: 10px 10px 30px black;
+    }
 
+    
+    #servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+}
 
-@media (min-width: 605px) {
+@media (max-width: 625px) {
 
     #topo p {
-        width: 600px;
+        width: 450px;
         margin: 0;
     }
 
     #sobre p {
-        width: 600px;
+        width: 450px;
         margin: 0px;
         padding: 0;
     }
+
+}
+
+@media (max-width: 482px) {
+
+    #topo p {
+        width: 300px;
+        margin: 0;
+    }
+
+    #sobre p {
+        width: 300px;
+        margin: 0px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 406px) {
+
+    .fundo_conteudo_contato {
+        width: 300px;
+        background: rgb(228, 228, 228);
+        margin: 30px;
+        padding: 70px 30px 70px 30px;
+        width: fit-content;
+        width: 250px;
     
+    }
 
 }

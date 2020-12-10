@@ -3,10 +3,6 @@ body {
     font-size: 16px;
 }
 
-h1, h2, h3 {
-    
-}
-
 a {
     text-decoration: none;
 }
@@ -23,4 +19,8 @@ a {
 
 .pontos li {
     font-size: 9px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
