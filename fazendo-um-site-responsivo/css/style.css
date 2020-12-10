@@ -227,8 +227,6 @@
     margin: 8px;
 }
 
-
-
 /* fotos fim */
 
 
@@ -240,42 +238,76 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 30px;
 }
 
 .fundo_conteudo_contato {
-    background: rgb(228, 228, 228);
-    margin: 30px;
-    padding: 70px 90px 30px 90px;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
+    margin: 0 10px;
+    background: rgb(228, 228, 228);
+    width: 270px;
+    transition: 500ms;
 }
 
 #contato div {
     display: flex;
+    justify-content: center;
 }
-
 
 #contato h1 {
     font-size: 2em;
     font-family: cursive;
-    margin: 0 0 60px 0;
+    margin: 0 0 50px 0;
 }
 
 #contato p {
-    margin-top: 80px;
+    margin: 140px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-a:visited, a:active, a:link {
-    color: rgb(0, 60, 255);
+#contato a:visited, a:active, a:link {
+    margin: 0;
+}
+
+#contato .fundo_conteudo_contato a {
+    background-color:  rgb(34, 34, 34);
+    color: rgb(228, 228, 228);
+    padding: 16px 40px;
+}
+
+
+#logo_github {
+    width: 40px;
 }
 
 /* fim do contato */
 
 
+
+
+
+
+
+/* responsividade do site */
+
+@media (max-width: 1186px) {
+
+    #contato div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fundo_conteudo_contato {
+        margin: 20px 0;
+        width: 300px;
+    }
+
+}
 
 @media (max-width: 1160px) {
 
@@ -293,10 +325,9 @@ a:visited, a:active, a:link {
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
-        width: 270px;
+        width: 300px;
         background: rgb(228, 228, 228);
         padding: 30px;
-        transition: 200ms;
     }
 
     #servico div .fundo_conteudo_servico:hover {
@@ -313,7 +344,6 @@ a:visited, a:active, a:link {
 
 }
 
-
 @media (max-width: 853px) {
 
     #fotos {
@@ -321,7 +351,7 @@ a:visited, a:active, a:link {
         display: flex;
         flex-direction: column;
         align-items: center;
-         padding: 30px 0px 30px 0px;
+        padding: 30px 0px 30px 0px;
     }
 
     #fotos h1 {
@@ -337,7 +367,6 @@ a:visited, a:active, a:link {
     }
 
     #fundo_galeria {
-        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -348,71 +377,7 @@ a:visited, a:active, a:link {
         width: 90%;
         margin: 8px;
     }
-
-
-    #servico div {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #servico div .fundo_conteudo_servico {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        margin-bottom: 30px;
-        width: 270px;
-        background: rgb(228, 228, 228);
-        padding: 30px;
-        transition: 200ms;
-        
-    }
-
-    #servico div .fundo_conteudo_servico:hover {
-        background: rgb(14, 14, 14);
-        color: rgb(157, 157, 157);
-        box-shadow: 10px 10px 30px black;
-    }
-
     
-    #servico {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-
-
-        
-    #contato {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .fundo_conteudo_contato {
-        width: 70%;
-        background: rgb(228, 228, 228);
-        margin: 30px;
-        padding: 70px 90px 70px 90px;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #contato div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 }
 
 @media (max-width: 625px) {
@@ -445,16 +410,84 @@ a:visited, a:active, a:link {
 
 }
 
-@media (max-width: 406px) {
+@media (max-width: 426px) {
 
     .fundo_conteudo_contato {
-        width: 300px;
+        margin: 20px 0;
+        width: 260px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 406px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    #servico div .fundo_conteudo_servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 30px;
+        width: 60%;
         background: rgb(228, 228, 228);
-        margin: 30px;
-        padding: 70px 30px 70px 30px;
-        width: fit-content;
-        width: 250px;
+        padding: 30px;
+        
+    }
+
+}
+
+@media (max-width: 377px) {
+
+    .fundo_conteudo_contato {
+        margin: 20px 0;
+        width: 70%;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 353px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    #servico div .fundo_conteudo_servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 30px;
+        width: 200px;
+        background: rgb(228, 228, 228);
+        padding: 30px;
+        transition: 200ms;
+        
+    }
+
+}
+
+@media (max-width: 314px) {
     
+    body {
+        font-size: 12px;
+    }
+
+    #topo p {
+        width: 220px;
+        margin: 0;
+    }
+
+    #sobre p {
+        width: 220px;
+        margin: 0px;
+        padding: 0;
     }
 
 }
