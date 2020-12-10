@@ -241,20 +241,36 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 30px;
 }
 
 .fundo_conteudo_contato {
-    width: 300px;
     background: rgb(228, 228, 228);
     margin: 30px;
-    padding: 70px 90px 70px 90px;
+    padding: 70px 90px 30px 90px;
     width: fit-content;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.fundo_conteudo_contato p {
-    margin: 70px 0 0 0;
+#contato div {
+    display: flex;
+}
 
+
+#contato h1 {
+    font-size: 2em;
+    font-family: cursive;
+    margin: 0 0 60px 0;
+}
+
+#contato p {
+    margin-top: 80px;
+}
+
+a:visited, a:active, a:link {
+    color: rgb(0, 60, 255);
 }
 
 /* fim do contato */
@@ -368,6 +384,35 @@
         align-items: center;
     }
 
+
+
+
+
+        
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fundo_conteudo_contato {
+        width: 70%;
+        background: rgb(228, 228, 228);
+        margin: 30px;
+        padding: 70px 90px 70px 90px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contato div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 625px) {
